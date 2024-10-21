@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 public class MetodosLista {
@@ -8,7 +9,8 @@ public class MetodosLista {
         // Dada uma lista com 7 notas de um aluno [7, 8.5, 9.3, 5, 7, 0, 3.6], faça:
 
         System.out.println("Crie uma lista e adicione as sete notas: ");
-         
+        
+        
         List<Double> notas = new ArrayList<Double>();
         notas.add(7.0);
         notas.add(8.5);
@@ -17,7 +19,11 @@ public class MetodosLista {
         notas.add(7.0);
         notas.add(0.0);
         notas.add(3.6);
+
+
+
         System.out.println(notas.toString());
+        
 
         System.out.println("Exiba a posição da nota 5.0: " + notas.indexOf(5d));
 
@@ -73,6 +79,16 @@ public class MetodosLista {
         System.out.println("Exiba todas as notas na ordem em que foram informados: ");
          for (Double nota : notas) System.out.println(nota);
 
+    
+   List<Double> notas2 = new LinkedList<>(notas);
+
+   System.out.println("Notas 2 = " + notas2.toString());
+
+   System.out.println("Primeira Nota da Lista Notas2 = " + notas2.get(0));
+
+   notas2.remove(0);
+
+   System.out.println("Remova a primeira nota: " + notas2.toString());
 
     }
     
