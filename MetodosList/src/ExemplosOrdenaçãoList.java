@@ -14,8 +14,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import javax.print.attribute.standard.JobName;
-
 public class ExemplosOrdenaçãoList {
     public static void main(String[] args) {
         
